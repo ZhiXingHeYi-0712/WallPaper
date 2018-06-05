@@ -6,7 +6,7 @@ import com.sun.jna.platform.win32.WinReg;
 import com.sun.jna.win32.StdCallLibrary;
 
 public class setbackground {
-    public static final String OUTPUT_PATH = "C:\\Users\\tom_9.DESKTOP-31N42JU\\Documents\\adb.png";
+    public static final String OUTPUT_PATH = "C:\\WallPaper\\TodayDesktop.png";
     public static void set(){
 
         Advapi32Util.registrySetStringValue(WinReg.HKEY_CURRENT_USER,

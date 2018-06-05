@@ -13,8 +13,8 @@ public class Painter {
         Examination exam = ExaminationInformation.getExaminations().get(0);
         Examination gaoKao = new Examination("高考", "20190607");
 
-        BufferedImage image = null;
-        File pictureFile = new File("src/res/origin.png");
+        BufferedImage image;
+        File pictureFile = GetFile.getPngFile();
         if (pictureFile.canRead()) {
             try {
                 Image src = ImageIO.read(pictureFile);

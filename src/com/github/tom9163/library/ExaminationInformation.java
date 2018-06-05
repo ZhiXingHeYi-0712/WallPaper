@@ -22,22 +22,22 @@ import java.util.List;
  * @author tom9163
  * Get Examination from exam.xml
  */
-public final class ExaminationInformation {
+final class ExaminationInformation {
     private static SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
-    private static final String XMLPOS = "src/res/exam.xml";
-
-    public static List<Examination> getExaminations() {
-        return getExaminations(XMLPOS);
-    }
+//    private static final String XMLPOS = "src/res/exam.xml";
+//
+//    static List<Examination> getExaminations() {
+//        return getExaminations(XMLPOS);
+//    }
 
     /**
      * @return an instance of Examination
      */
-    private static List<Examination> getExaminations(String fileName) {
+    static List<Examination> getExaminations() {
         List<Examination> examinations = new ArrayList<>();
         try {
             DocumentBuilder domBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            File input = new File(fileName);
+            File input = GetFile.getXmlFile();
             Document doc = domBuilder.parse(input);
 
             Element root = doc.getDocumentElement();
