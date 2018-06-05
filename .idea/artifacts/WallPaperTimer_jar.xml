@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WallPaperTimer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WallPaperTimer_jar</output-path>
+    <root id="archive" name="WallPaperTimer.jar">
+      <element id="module-output" name="WallPaperTimer" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jna-platform-4.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jna-4.5.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
